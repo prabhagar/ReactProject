@@ -4,12 +4,14 @@ import './App.css';
 import { Greet } from './Components/Greet';
 import Welcome from './Components/Welcome'
 import Hello from './Components/Hello'
+import Message from './Components/Message'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greet name='Bruce' heroName='Batman'>
+        <Message />
+        {/* <Greet name='Bruce' heroName='Batman'>
         <p>I am Batman</p></Greet>
         <Greet name='Clark' heroName='SuperMan'>
         <button>Activate Super Power</button>
@@ -20,7 +22,7 @@ class App extends Component {
         </Welcome>
         <Welcome name='Tobey' heroName='SpiderMan'>
         <button>Spread the web</button>
-        </Welcome>
+        </Welcome> */}
         {/* <Hello /> */}
       </div>
     );
