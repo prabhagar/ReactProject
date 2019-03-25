@@ -17,11 +17,13 @@ import Inline from './Components/Inline';
 import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './Components/Form';
+import LifeCycleA from './Components/LifeCycleA';
 
 class App extends Component {
   render() {
     return (
-     <Form/>
+    //  <Form/>
+    <LifeCycleA/>
     );
   }
 }
