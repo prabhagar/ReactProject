@@ -18,12 +18,16 @@ import './appStyles.css';
 import styles from './appStyles.module.css';
 import Form from './Components/Form';
 import LifeCycleA from './Components/LifeCycleA';
+import FragemtDemo from './Components/FragemtDemo';
+import Columns from './Components/Columns';
 
 class App extends Component {
   render() {
     return (
+      <Columns/>
+      // <FragemtDemo/>
     //  <Form/>
-    <LifeCycleA/>
+    // <LifeCycleA/>
     );
   }
 }
