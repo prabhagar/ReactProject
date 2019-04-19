@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ChildComponent from './ChildComponent'
+import MemoComp from './MemoComp';
 
 class ParentComponent extends Component {
 
@@ -13,13 +14,25 @@ class ParentComponent extends Component {
     }
 
     greetParent(childName) {
-        alert(`Hello ${this.state.parent} from ${childName}`);
+        alert(`Hello ${this.state.parent} from ${childName}`); 
     }
     
+    componentDidMount() {
+      setInterval(() => {
+        this.setState({
+          parent: 'Prabhagar'
+        })
+      }, 2000)
+    }
+
+
+    
   render() {
+    console.log("Parent Component Renderer")
     return (
       <div>
-        <ChildComponent greetHandler={this.greetParent}></ChildComponent>
+        <MemoComp name={this.state.parent} />
+        {/* <ChildComponent greetHandler={this.greetParent}></ChildComponent> */}
       </div>
     )
   }
